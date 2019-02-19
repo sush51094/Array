@@ -32,3 +32,62 @@ var reversedNames2 = names.sorted(by: forward)
 
 print(reversedNames2)
 
+var reversedNames3 = names.sorted{ (a: String, b: String) -> Bool in
+    return a > b
+}
+print(reversedNames3)
+
+var reveresedNames4 = names.sorted{(a,b) -> Bool in
+
+return a < b
+
+}
+
+print(reveresedNames4)
+
+reveresedNames4 = names.sorted{a,b -> Bool in
+    
+    return a < b
+    
+}
+
+print(reveresedNames4)
+
+
+
+reveresedNames4 = names.sorted{a,b in
+    
+    return a < b
+    
+}
+
+print(reveresedNames4)
+
+reveresedNames4 = names.sorted{a,b in
+    
+     a < b
+    
+}
+
+print(reveresedNames4)
+
+
+reveresedNames4 = names.sorted{ $0 < $1
+    
+    
+}
+
+print(reveresedNames4)
+
+
+reveresedNames4 = names.sorted(by : <)
+
+
+print(reveresedNames4)
+
+
+
+reveresedNames4 = names.sorted(by : >)
+
+
+print(reveresedNames4)
