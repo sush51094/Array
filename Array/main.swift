@@ -24,6 +24,13 @@ func forward(_ s1: String, _ s2 : String) -> Bool
 {
     return s1 < s2
 }
+
+
+var x: (String,String) -> Bool = forward(_:_:)
+
+let reversedNames0 = names.sorted(by :x)
+
+
 var reversedNames1 = names.sorted(by: backward)
 
 print(reversedNames1)
